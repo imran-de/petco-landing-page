@@ -13,8 +13,21 @@ body {
 /* main start */
 
 /* banner/slider */
-.petco_slider_image_1 {
-  max-width: 100%;
+.dot-container{
+  text-align: center;
+  margin-top: -40px;
+}
+.dot{
+    height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #C2B4A5;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active-slider-dot {
+  background-color: #fff;
 }
 /* category */
 .petco_category_title {
