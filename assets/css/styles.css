@@ -1,0 +1,366 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+/* header section */
+.petco-nav .desktop {
+  display: block;
+  max-width: 100%;
+}
+.petco-nav .mobile {
+  display: none;
+}
+/* main start */
+
+/* banner/slider */
+.petco_slider_image_1 {
+  max-width: 100%;
+}
+/* category */
+.petco_category_title {
+  font-size: 25px;
+  line-height: 32px;
+  color: #000;
+  text-align: center;
+}
+.petco_category_container_row {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.petco_category_container_col {
+  padding: 10px 20px;
+}
+.petco_category_card {
+  text-align: center;
+  width: 250px;
+  max-width: 100%;
+  margin: auto;
+}
+.petco_category_card_image img {
+  width: 221px;
+  max-width: 100%;
+  height: 221px;
+  border-radius: 50%;
+}
+.petco_category_card_body_title {
+  color: #a6549c;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  margin: 20px 0;
+}
+.petco_category_card_body_text {
+  font-size: 16px;
+  line-height: 20px;
+}
+#card-title-2 {
+  color: #1e839a;
+}
+#card-title-3 {
+  color: #ec6432;
+}
+
+/* petco product prep */
+.petco_product_prep {
+  margin-top: 75px;
+  padding: 0 21px;
+}
+.petco_product_prep_row,
+.petco_product_finish_row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.petco_product_prep_banner {
+  background: #a6549c;
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  height: 371px;
+}
+.petco_product_prep_banner_image1 img {
+  border: 10px solid #a6549c;
+  height: 351px;
+}
+.petco_product_prep_banner_image2 img {
+  height: 371px;
+  width: 100%;
+}
+.petco_product_prep_list_container {
+  padding: 0 10px;
+}
+.petco_product_prep_header {
+  display: flex;
+  justify-content: space-between;
+}
+.petco_product_prep_list_container .petco_product_prep_header .prep-title {
+  color: #a6549c;
+  font-size: 25px;
+  line-height: 32px;
+  margin: 0;
+}
+.petco_product_prep_list_container .petco_product_prep_header a,
+.prep_product_card_footer a,
+.petco_product_cat_groom_list_container .petco_product_cat_groom_header a,
+.cat_groom_product_card_footer a {
+  color: #001952;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 32px;
+  margin: 0;
+}
+.petco_product_prep_list_container .product_prep_hr {
+  height: 1px;
+  background: #a6549c;
+}
+.prep-products_row {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.prep_product_card,
+.cat_groom_product_card {
+  position: relative;
+  width: 200px;
+  margin: auto;
+  max-width: 100%;
+  height: 287px;
+}
+.prep_product_card .prep_product_card_img img,
+.cat_groom_product_card .cat_groom_product_card_img img {
+  width: 189px;
+  max-width: 100%;
+  height: 189px;
+  margin: auto;
+}
+.prep_product_card_body .prep_product_card_body_title,
+.cat_groom_product_card_body .cat_groom_product_card_body_title {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 18px;
+  color: #333333;
+}
+.prep_product_card_footer,
+.cat_groom_product_card_footer {
+  position: absolute;
+  bottom: 0;
+}
+/* middle banner */
+.petco-middle-banner,
+#petco_product_finish {
+  margin-top: 70px;
+  padding: 0 20px;
+}
+.petco-middle-banner .banner-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+.petco-middle-banner .mobile-middle-banner {
+  display: none;
+}
+.banner-col{
+  margin: auto;
+  max-width: 100%;
+  overflow: hidden;
+}
+.banner-img img{
+  width: 100%;
+  height: 100%;
+}
+
+/* petco cat and groom product section */
+.petco_products_cat_groom {
+  margin-top: 40px;
+  padding: 0 21px;
+}
+.petco_product_cat_groom_row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+}
+.petco_product_cat_groom_header {
+  display: flex;
+  justify-content: space-between;
+}
+.petco_product_cat_groom_header .cat-groom-title {
+  color: #1e839a;
+  font-size: 25px;
+  line-height: 32px;
+  margin: 0;
+}
+.petco_product_cat_groom_list_container .product_cat_groom_hr {
+  height: 1px;
+  background: #61bdd2;
+}
+.petco_product_cat_groom_list_container .cat_groom-products_row {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+/* finish product */
+.petco_product_finish_img img {
+  width: 636px;
+  max-width: 100%;
+  height: 371px;
+}
+
+/* bottom banner */
+#petco_bottom_banner{
+  margin-top: 90px;
+  background: url('/assets/images/Image-15.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 359px;
+}
+.petco_bottom_banner .petco_bottom_banner_row{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 359px;
+  padding-right: 60px;
+}
+.petco_bottom_banner .bottom_banner_text_box{
+  width: 559px;
+  max-width: 100%;
+  height:auto;
+  background: #82BBCF;
+}
+.petco_bottom_banner .bottom_banner_text_box img{
+  max-width: 100%;
+}
+
+
+
+/* footer */
+.petco_footer .desktop-footer {
+  width: 100%;
+  margin-top: 70px;
+}
+.petco_footer .mobile-footer {
+  display: none;
+}
+
+
+/*-------------------------------*/
+
+/* responsive styling */
+
+/*--------------------------------*/
+@media screen and (max-width: 1024px) and (min-width: 600px){
+  .petco_products_cat_groom .petco_product_cat_groom_row{
+    grid-template-columns: repeat(1 , 1fr);
+    row-gap: 40px;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .petco-nav .desktop {
+    display: none;
+  }
+  .petco-nav .mobile {
+    display: block;
+    width: 100%;
+  }
+  /* category */
+  .petco_category_container_row {
+    flex-direction: column;
+  }
+  /* prep product */
+  .petco_product_prep_row,
+  .petco_product_prep_banner,
+  .petco_product_cat_groom_row,
+  .petco_product_finish_row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* prep product */
+  .petco_product_prep {
+    margin-top: 30px;
+  }
+  .petco_product_prep_banner_image1 {
+    display: none;
+  }
+  .petco_product_prep_banner {
+    height: 275px;
+  }
+  .petco_product_prep_banner_image2 img {
+    height: 275px;
+    object-fit: fill;
+  }
+  .petco_product_prep_list_container {
+    padding: 0;
+  }
+  .petco_product_prep_header {
+    margin-top: 35px;
+  }
+  .petco_product_prep_list_container,
+  .petco_product_cat_groom_list_container {
+    max-width: 85vw;
+  }
+  .petco_product_prep_list_container .prep-products_row,
+  .cat_groom-products_row {
+    overflow-x: scroll;
+  }
+  /* middle banner */
+  .petco-middle-banner,
+  #petco_product_finish {
+    margin-top: 30px;
+  }
+  .petco-middle-banner .banner-row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .petco-middle-banner .desktop-middle-banner{
+    display: none;
+  }
+  .petco-middle-banner .mobile-middle-banner{
+    display: block;
+    background-color: #61bdd2;
+  }
+  .petco-middle-banner .banner-col img{
+    width: 100%;
+    height: 100%;
+  }
+  .banner-2nd-container{
+    margin-top: -20px;
+  }
+
+
+  /* cat groom product */
+  .petco_product_cat_groom_list_container.groom {
+    margin-top: 30px;
+  }
+  /* finish product */
+  .petco_product_finish_img img {
+    object-fit: contain;
+    height: auto;
+  }
+
+  /* petco bottom banner */
+  #petco_bottom_banner{
+    margin-top: 30px;
+    background: url('/assets/images/Image-15-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .petco_bottom_banner .petco_bottom_banner_row{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 459px;
+  padding-right: 0px;
+}
+
+  /* footer */
+  .petco_footer .desktop-footer {
+    display: none;
+  }
+  .petco_footer .mobile-footer {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+  }
+}
