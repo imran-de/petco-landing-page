@@ -1,10 +1,10 @@
 var slideIndex = 0;
-showSlides();
+petcoShowSlides();
 
-function showSlides() {
+function petcoShowSlides() {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  var slides = document.getElementsByClassName("petco_slides");
+  var dots = document.getElementsByClassName("petco-slider-dot");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
@@ -15,5 +15,5 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active-slider-dot";
-  setTimeout(showSlides, 3000); // Change image every 2 seconds
+  setTimeout(petcoShowSlides, 3000); // Change image every 2 seconds
 }

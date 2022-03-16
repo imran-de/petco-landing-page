@@ -13,18 +13,108 @@ body {
 /* main start */
 
 /* banner/slider */
+.petco_slides{
+  width: 1442px;
+  max-width: 100%;
+  margin: auto;
+}
+.petco_slides .petco_slides_row{
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  grid-gap: 0;
+  max-width: 100%;
+  overflow: hidden;
+}
+.petco_slides .petco_slides_start{
+  background: url('../images/slider-1-bg.png');
+  background-position: -25px -20px;
+  background-repeat: no-repeat;
+  background-size: fill;
+  position: relative;
+  height: 500px;
+  width: 962px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+}
+.petco_slides .slides_start_content_box{
+  width: 560px;
+  max-width: 100%;
+  margin-left: 100px;
+  color: #fff;
+}
+.petco_slides .slides_start_content_box .slide-logo img{
+  width: 415px;
+  max-width: 100%;
+}
+.petco_slides .slides_start_content_box h2{
+  font-size: 48px;
+  font-weight: bold;
+}
+.petco_slides .slides_start_content_box p{
+  font-size: 18px;
+}
+.petco_slides .slides_start_content_box button{
+  border: none;
+  background: #001952;
+  width: 211px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 64px;
+}
+.petco_slides .slides_start_content_box button:hover{
+  color: #001952;
+  background: #fff;
+}
+.petco_slides .small-border-thumb{
+  width: 214px;
+  height: 212px;
+  position: absolute;
+  top: 25px;
+  right: 0;
+}
+.petco_slides .pecto_slides_end{
+  height: 100%;
+  width: 579px;
+  height: 500px;
+  /* overflow: hidden; */
+}
+.petco_slides .pecto_slides_end img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  margin-left: -120px;
+  height: 500px;
+}
+
+
+
+
+
 .dot-container{
   text-align: center;
-  margin-top: -40px;
+  /* background: red; */
+  position: absolute;
+  width: 100%;
+  margin-top: -20px;
+  /* z-index: 999; */
 }
-.dot{
-    height: 15px;
+.petco-slider-dot{
+  height: 15px;
   width: 15px;
   margin: 0 2px;
   background-color: #C2B4A5;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  z-index: 200;
 }
 .active-slider-dot {
   background-color: #fff;
@@ -279,6 +369,40 @@ body {
     display: block;
     width: 100%;
   }
+  /* slider */
+  .petco_slides .petco_slides_row{
+    grid-template-columns: 1fr;
+  }
+  .order-1{
+    order: 2;
+  }
+  .order-2{
+    order: 1;
+  }
+  .petco_slides .slides_start_content_box{
+    margin-left: 0;
+    width: 350px;
+    padding: 0 20px;
+  }
+  .petco_slides .slides_start_content_box h2{
+      font-size: 28px;
+  }
+  .petco_slides .small-border-thumb{
+    display: none;
+  }
+  .petco_slides .petco_slides_start{
+    height: auto;
+    padding: 30px 0;
+  }
+  .petco_slides .pecto_slides_end{
+    height: auto;
+  }
+  .petco_slides .pecto_slides_end img{
+    width: 375px;
+    height: 375px;
+    margin-left: 0;
+  }
+
   /* category */
   .petco_category_container_row {
     flex-direction: column;
