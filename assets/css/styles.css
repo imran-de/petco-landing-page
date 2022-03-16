@@ -209,7 +209,7 @@ body {
 /* bottom banner */
 #petco_bottom_banner{
   margin-top: 90px;
-  background: url('/assets/images/Image-15.jpg');
+  background: url('../images/Image-15.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -342,7 +342,7 @@ body {
   /* petco bottom banner */
   #petco_bottom_banner{
     margin-top: 30px;
-    background: url('/assets/images/Image-15-mobile.jpg');
+    background: url('../images/Image-15-mobile.jpg');
     background-repeat: no-repeat;
     background-size: cover;
   }
