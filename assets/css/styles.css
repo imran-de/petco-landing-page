@@ -80,6 +80,10 @@ body {
   top: 25px;
   right: 0;
 }
+.petco_slides .small-border-thumb.thumb-2{
+  top: 25px;
+  right: 100px;
+}
 .petco_slides .pecto_slides_end{
   height: 100%;
   width: 579px;
@@ -93,10 +97,6 @@ body {
   margin-left: -120px;
   height: 500px;
 }
-
-
-
-
 
 .dot-container{
   text-align: center;
