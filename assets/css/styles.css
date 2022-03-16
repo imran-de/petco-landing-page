@@ -13,6 +13,9 @@ body {
 /* main start */
 
 /* banner/slider */
+.petco_slider{
+  margin-bottom: 40px;
+}
 .petco_slides{
   width: 1442px;
   max-width: 100%;
@@ -370,6 +373,9 @@ body {
     width: 100%;
   }
   /* slider */
+  .petco_slider{
+  margin-bottom: 30px;
+  }
   .petco_slides .petco_slides_row{
     grid-template-columns: 1fr;
   }
