@@ -16,29 +16,50 @@ body {
 .petco_slider{
   margin-bottom: 40px;
 }
-.petco_slides{
-  width: 1442px;
-  max-width: 100%;
-  margin: auto;
-}
-.petco_slides .petco_slides_row{
+.petco_slides_row{
   display: grid;
-  grid-template-columns: 8fr 4fr;
-  grid-gap: 0;
-  max-width: 100%;
-  overflow: hidden;
-}
-.petco_slides .petco_slides_start{
-  background: url('../images/slider-1-bg.png');
-  background-position: -25px -20px;
-  background-repeat: no-repeat;
-  background-size: fill;
-  position: relative;
+  grid-template-columns: 70% 30%;
+  /* overflow: hidden; */
   height: 500px;
-  width: 962px;
-  max-width: 100%;
+  background: #fff;
+  position: relative;
+}
+.petco_slides_col_first{
+  background: #61bdd2;
+  clip-path: polygon(70% 0, 100% 100%, 0 100%, 0 0);
+  z-index: 1;
+  position: relative;
+}
+.petco_slides_start{
+  background: #A6549C;
+  height: 500px;
+  width: 98%;
+  z-index: 1;
   display: flex;
   align-items: center;
+  
+  clip-path: polygon(69.5% 0, 100% 100%, 0 100%, 0 0);
+}
+.petco_slides_col_last{
+  height: 500px;
+  background: #1e839a;
+  margin-left: -30%;
+  position: relative;
+  /* clip-path: polygon(100% 0, 100% 100%, 0 55%, 0 0) */
+}
+.petco_slides_col_last .slider-last-image{
+  width: 100%;
+  max-height: 500px;
+}
+.small-border-thumb{
+  width: 214px;
+  height: 212px;
+  position: absolute;
+  top: 25px;
+  bottom: 0;
+  right: 0;
+  left: -25%;
+  z-index: 100;
 }
 .petco_slides .slides_start_content_box{
   width: 560px;
@@ -76,38 +97,17 @@ body {
   color: #001952;
   background: #fff;
 }
-.petco_slides .small-border-thumb{
-  width: 214px;
-  height: 212px;
-  position: absolute;
-  top: 25px;
-  right: 0;
-}
 .petco_slides .small-border-thumb.thumb-2{
   top: 25px;
   right: 100px;
 }
-.petco_slides .pecto_slides_end{
-  height: 100%;
-  width: 579px;
-  height: 500px;
-  /* overflow: hidden; */
-}
-.petco_slides .pecto_slides_end img{
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-  margin-left: -120px;
-  height: 500px;
-}
-
 .dot-container{
   text-align: center;
   /* background: red; */
   position: absolute;
   width: 100%;
-  margin-top: -20px;
-  /* z-index: 999; */
+  margin-top: -30px;
+  z-index: 999;
 }
 .petco-slider-dot{
   height: 15px;
@@ -117,11 +117,15 @@ body {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-  z-index: 200;
+  z-index: 999;
 }
 .active-slider-dot {
   background-color: #fff;
 }
+
+
+
+
 /* category */
 .petco_category_title {
   font-size: 25px;
@@ -356,6 +360,58 @@ body {
 
 /*--------------------------------*/
 @media screen and (max-width: 1024px) and (min-width: 600px){
+  /* slider */
+ .petco_slides_row{
+  grid-template-columns: repeat(1, 1fr);
+  /* overflow: hidden; */
+  height: auto;
+}
+.petco_slides_col_first{
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+  order: 2;
+}
+.petco_slides_start{
+  background: #A6549C;
+  width: 100%;
+  height: auto;
+  padding: 40px 0;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0)
+}
+.petco_slides .slides_start_content_box{
+  margin-left: 0;
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+.petco_slides .slides_start_content_box h2{
+  font-size: 28px;
+}
+.petco_slides .slides_start_content_box .slide-logo img{
+  width: 70%;
+}
+.petco_slides .slides_start_content_box button{
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.petco_slides_col_last{
+  height: auto;
+  background: #a6549c;
+  margin-left: 0%;
+  order: 1;
+  /* clip-path: polygon(100% 0, 100% 100%, 0 55%, 0 0) */
+}
+.petco_slides .small-border-thumb{
+  display: none;
+}
+/* category */
+.petco_category_container_row{
+  display: grid;
+  grid-template-columns: (2, 1fr);
+}
+/* prep product */
+.petco_product_prep_row{
+  grid-template-columns: repeat(1, 1fr);
+}
   .petco_products_cat_groom .petco_product_cat_groom_row{
     grid-template-columns: repeat(1 , 1fr);
     row-gap: 40px;
@@ -373,42 +429,48 @@ body {
     width: 100%;
   }
   /* slider */
-  .petco_slider{
-  margin-bottom: 30px;
-  }
-  .petco_slides .petco_slides_row{
-    grid-template-columns: 1fr;
-  }
-  .order-1{
-    order: 2;
-  }
-  .order-2{
-    order: 1;
-  }
-  .petco_slides .slides_start_content_box{
-    margin-left: 0;
-    width: 350px;
-    padding: 0 20px;
-  }
-  .petco_slides .slides_start_content_box h2{
-      font-size: 28px;
-  }
-  .petco_slides .small-border-thumb{
-    display: none;
-  }
-  .petco_slides .petco_slides_start{
-    height: auto;
-    padding: 30px 0;
-  }
-  .petco_slides .pecto_slides_end{
-    height: auto;
-  }
-  .petco_slides .pecto_slides_end img{
-    width: 375px;
-    height: 375px;
-    margin-left: 0;
-  }
-
+ .petco_slides_row{
+  grid-template-columns: repeat(1, 1fr);
+  /* overflow: hidden; */
+  height: auto;
+}
+.petco_slides_col_first{
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+  order: 2;
+}
+.petco_slides_start{
+  background: #A6549C;
+  width: 100%;
+  height: auto;
+  padding: 40px 0;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0)
+}
+.petco_slides .slides_start_content_box{
+  margin-left: 0;
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+.petco_slides .slides_start_content_box h2{
+  font-size: 28px;
+}
+.petco_slides .slides_start_content_box .slide-logo img{
+  width: 70%;
+}
+.petco_slides .slides_start_content_box button{
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.petco_slides_col_last{
+  height: auto;
+  background: #a6549c;
+  margin-left: 0%;
+  order: 1;
+  /* clip-path: polygon(100% 0, 100% 100%, 0 55%, 0 0) */
+}
+.petco_slides .small-border-thumb{
+  display: none;
+}
   /* category */
   .petco_category_container_row {
     flex-direction: column;
